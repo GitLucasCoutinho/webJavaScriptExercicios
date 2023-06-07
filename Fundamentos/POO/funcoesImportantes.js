@@ -46,4 +46,3 @@ obj = 1234
 console.log(obj)
 
 
-
