@@ -1,0 +1,7 @@
+
+//cria arquivo package.json
+npm init -y
+
+
+-E [e a versao exata]
+npm i --save express@4.15.2 -E
