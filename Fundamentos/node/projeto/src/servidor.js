@@ -40,7 +40,7 @@ app.post('/produtos', (req, res, next) => {
        // id: req.params.id,
         nome: req.body.nome,
         preco: req.body.preco
-    })
+    }) 
     res.send(produto) //no final das contas aqui vai converter para JSON 
 })
 
@@ -52,6 +52,12 @@ app.put('/produtos/:id', (req, res, next) => {
     })
     res.send(produto) //no final das contas aqui vai converter para JSON 
 })
+
+app.delete('/produtos/:id', (req, res, next) => {
+    const produto = bancoDeDados.excluirProdutos(req.params.id)
+    res.send(produto) //no final das contas aqui vai converter para JSON 
+})
+    
 
 app.listen(porta, () => {
     console.log(`servidor esta executando na porta ${porta}.`)
