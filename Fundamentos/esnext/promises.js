@@ -24,8 +24,6 @@ function falarDepoisDe02(segundos, frase){
 
 //tratando erro utilizando reject e nao resolve
 
-
-
     function falarDepoisDe03(segundos, frase){
         return new Promise((resolve, reject) => {
             setTimeout(() => {
