@@ -12,6 +12,7 @@ function funcionarOuNao(valor, chanceErro) {
         } catch (error) {
             //resolve para exibir a msg de erro
             //resolve(error)
+            // executa o primeiro tratamento de erro do retorno da funcao 
             reject(error)
         }
     })
@@ -26,6 +27,7 @@ funcionarOuNao('Testando...', 0.5)
         err => console.log(`Erro Esperado: ${err}`)
         )
     .then(() => console.log('Quase fim!')) 
+    //tente manter o catch(tratamento de erro) no final
     .catch(err => console.log(`Erro: ${err}`))
     .then(() => console.log('Fim!'))
 
