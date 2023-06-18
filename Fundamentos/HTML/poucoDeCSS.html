@@ -1,11 +1,35 @@
 <html> 
     <head>
-        <title>Um pouco de HTML</title>
+        <title>Um pouco de CSS</title>
         <style>
-            h1, span{
-                display: nome;
+            
+            h1{
+                font-size: 30px;
             }
 
-        </style>
+            .fundoVermelho{
+            }
+            #textoPrincipal {
+                font-size: 40px;
+                font-weight: bold;
+                color: #fff;
+                padding: 10px;
+                background-color: #444;
+                margin-bottom: 50px;
+            }
+            </style>
     </head>
-</html>
+    
+    <body>
+        <h1>CSS</h1>
+        <!-- Aplicar o css para um tipo de ID utiliza-se # dessa forma consegue manipular o estilo de um elemento unico no navegador-->
+        <span id="textoPrincipal">Texto 1</span> <br><br><br>
+        <!-- A declaracao da classe eh feita na tag style com notacao .nomeDaClasse no caso .fundoVermelho (class voltado para estilo)-->
+        <span class="fundoVermelho negrito">Texto 2</span><br>
+        <span class="fundoVermelho">Texto 3</span>
+<!-- No console do navegador se chama assim = document.querySelector('.fundoVermelho')-->
+
+    </body>
+
+
+</html>                                       
