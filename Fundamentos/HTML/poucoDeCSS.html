@@ -1,6 +1,7 @@
 <html> 
     <head>
         <title>Um pouco de CSS</title>
+        <link rel="stylesheet" href="PoucoDeCSS.css">
         <style>
             
             h1{
@@ -8,16 +9,9 @@
             }
 
             .fundoVermelho{
+                background-color: #C00;
             }
-            #textoPrincipal {
-                font-size: 40px;
-                font-weight: bold;
-                color: #fff;
-                padding: 10px;
-                background-color: #444;
-                margin-bottom: 50px;
-            }
-            </style>
+        </style>
     </head>
     
     <body>
@@ -26,7 +20,9 @@
         <span id="textoPrincipal">Texto 1</span> <br><br><br>
         <!-- A declaracao da classe eh feita na tag style com notacao .nomeDaClasse no caso .fundoVermelho (class voltado para estilo)-->
         <span class="fundoVermelho negrito">Texto 2</span><br>
-        <span class="fundoVermelho">Texto 3</span>
+        <span class="fundoVermelho" wm-atrib>Texto 3</span>
+
+<!-- No console do navegador se chama assim = document.querySelector('[wm-atrib]' busca pelo nome do atributo)-->
 <!-- No console do navegador se chama assim = document.querySelector('.fundoVermelho')-->
 
     </body>
