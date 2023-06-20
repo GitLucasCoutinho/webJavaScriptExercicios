@@ -6,6 +6,33 @@
     <title>Anatomia CSS</title>
     <style>
         /* ... */
+        .selector {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /*multiplo seletor
+            border: solid 5px*/
+            border: dashed 5px;
+            font-family: Helvetica, sans-serif;
+            /*funcoes*/
+            width: calc(100% - 100px);
+            background-color: rgb(34, 153, 189);
+        }
+
+    /* Usando uma pseudo-classe */
+    .selector:houver {
+        background-color: orangered;
+    }
+    /*Usando um pseudo-elemento*/
+    .selector::first-letter {
+        font-size: 60px;
+        font-weight: bold;
+    }
+    /*padrao de nomenclatura?*/
+    /*dash-case ou camelCase?*/
+
+
+
     </style>
 </head>
 
