@@ -12,12 +12,62 @@
         .c1 { background-color: orange; }
         .c2 { background-color: skyblue; }
         .c3 { background-color: tomato; }
-
-        div { 
-            float: left;
-            padding-top: 100px;
-            padding: 10px 50px 100px 150px;
+/*
+div { 
+    float: left;
+    padding-top: 100px;
+    padding: 10px 50px 100px 150px;
+}
+*/
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
         }
+
+        .flex-container div {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 300px;
+            width: 600px;
+        }
+
+        .flex-container div:nth-child(3){
+            background-color: indianred;
+            order: 1;
+            order: 0;
+            order: -1;
+            align-self: center;
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: stretch;
+
+        }
+
+        .flex-container div {
+            width: 100px;
+            flex-grow: 0;
+            flex-grow: 1;
+        }
+
+        .flex-container div:nth-child(1){
+            flex-grow: 2;
+        }
+        
+        .flex-container {
+            width: 300;
+            flex-shrink: 1;
+        }
+        
+        .flex-container div:nth-child(1){
+            flex-grow: 5;
+        }
+
+
+
+
     </style>
 </head>
 
