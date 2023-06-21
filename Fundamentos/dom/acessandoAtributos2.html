@@ -18,6 +18,17 @@
     </div>
     <script>
         // ...
+        const lista = document.querySelector('div ul[destino="escritório"]')
+        //const lista = document.querySelector('#compras') //nao muito performatico
+        console.log('Elemento "ul"..............')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.destino)
+        console.log('getAttribute', lista.getAttribute('destino'))
+        lista.setAttribute('destino', 'empresa')
+        lista.setAttribute('status', 'aberto')
+        lista.removeAttribute('destino')
+
+
     </script>
 </body>
 
