@@ -10,7 +10,7 @@ const app = express()
 app.use(express.static('.'))
 
 //qualquer requisicao que chegar com /teste seria tratado por este midleware
-//app.use('/teste', bodyParser.urlencoded({ extended : true}))
+//app.use('/teste', bodyParser.urlencucasloutinhocoded({ extended : true}))
 
 
 //esse aqui vai ser aplicado para qualquer requisicao que 
@@ -22,6 +22,7 @@ app.use(bodyParser.json())
 
 //quando vier uma requisicao do tipo get na url /teste chame a funcao que retornara um "OK"
 app.get('/teste', (req, res) => res.send('ok'))
+app.get('/dataatual', (req, res) => res.send(new Date))
 app.listen(8080, () => console.log('Executando...'))
 
 
