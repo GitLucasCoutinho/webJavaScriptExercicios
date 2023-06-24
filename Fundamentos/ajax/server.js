@@ -44,6 +44,15 @@ const upload = multer({ storage }).single('arquivo')
         })
     })
 
+
+        //neste caso precisa do boryparser para interpretar os dados recebidos da requisicao do front 
+    app.post('/formulario', (req, res) =>  {
+        res.send({
+            ...req.body,
+            id: 1
+        })
+    })
+        
 //quando vier uma requisicao do tipo get na url /teste chame a funcao que retornara um "OK"
 app.get('/teste', (req, res) => res.send('ok'))
 app.get('/dataatual', (req, res) => res.send(new Date))
