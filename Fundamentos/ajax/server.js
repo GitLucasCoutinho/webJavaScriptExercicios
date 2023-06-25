@@ -53,6 +53,21 @@ const upload = multer({ storage }).single('arquivo')
         })
     })
         
+
+app.get('/parOuImpar', (req, res) => {
+
+    //req.body
+    //req.query
+    //req.params
+    const par = parseInt(req.query.numero) % 2 === 0 
+        res.send({
+            resultado: par ? 'par' : 'impar'
+        })
+
+})
+
+
+
 //quando vier uma requisicao do tipo get na url /teste chame a funcao que retornara um "OK"
 app.get('/teste', (req, res) => res.send('ok'))
 app.get('/dataatual', (req, res) => res.send(new Date))
