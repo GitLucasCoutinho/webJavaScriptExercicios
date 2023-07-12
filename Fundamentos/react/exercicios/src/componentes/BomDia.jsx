@@ -1,26 +1,18 @@
-import React, {Fragment} from "react";
+import React from 'react'
 
-
-//export default props => <h1>Bom dia {props.nome}!</h1>
-/*
-
-//uma forma
-export default props =>
-<div>
-    <h1>Bom dia {props.nome}</h1>
-    <h2>{props.nome}</h2>
-</div>
-
-//outra forma 
 export default props => [
-    <h1 key='h1'>Bom dia {props.nome}</h1>,
-    <h2 key='h2'>{props.nome}</h2>
+    <h1 key='h1'>Bom dia {props.nome}!</h1>,
+    <h2 key='h2'>Até breve!</h2>
 ]
 
-*/
+// export default props =>
+//     <React.Fragment>
+//         <h1>Bom dia {props.nome}!</h1>
+//         <h2>Até breve!</h2>
+//     </React.Fragment>
 
-export default props =>
-<Fragment>
-    <h1>Bom dia {props.nome}</h1>
-    <h2>Ate breve!</h2>
-</Fragment>
+// export default props =>
+//     <div>
+//         <h1>Bom dia {props.nome}!</h1>
+//         <h2>Até breve!</h2>
+//     </div>

@@ -1,5 +1,5 @@
 :root {
-    --bg-button: #feffff;
+    --bg-button: #f0f0f0;
     --border-button: solid 1px #888;
 }
 
@@ -12,23 +12,23 @@
     outline: none;
 }
 
-.button:active{
+.button:active {
     background-color: #ccc;
 }
 
-.button.double{
+.button.double {
     grid-column: span 2;
 }
 
-.button.triple{
+.button.triple {
     grid-column: span 3;
 }
 
 .button.operation {
     background-color: #fa8231;
-    color:#FFF;
+    color: #FFF;
 }
 
-.button.operation:active{
-    background-color: #fa8231cc ;
+.button.operation:active {
+    background-color: #fa8231cc;
 }
